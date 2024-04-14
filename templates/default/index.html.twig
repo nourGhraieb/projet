@@ -1,0 +1,617 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Active Harmony{% endblock %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Active Harmony</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Active<span>Harmony.</span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="{{path('app_index') }}" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="{{path('app_about') }}" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="{{path('app_contact') }}" class="nav-link">Contact</a></li>
+	          <li class="nav-item cta mr-md-2"><a href="#" class="nav-link">Acheter ticket</a></li>
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/m.png');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-xl-10 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Developer <br><span>Conference 2019</span></h1>
+            <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">December 21-24, 2019. Tunisie, Sousse</p>
+            <div id="timer" class="d-flex mb-3">
+						  <div class="time" id="days"></div>
+						  <div class="time pl-4" id="hours"></div>
+						  <div class="time pl-4" id="minutes"></div>
+						  <div class="time pl-4" id="seconds"></div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section services-section bg-light">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon"><span class="flaticon-placeholder"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Venue</h3>
+                <p>	Sousse,M'saken</p>
+              </div>
+            </div>      
+          </div>
+    </section>
+   	
+    <section class="ftco-counter img" id="section-counter">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 d-flex">
+    				<div class="img d-flex align-self-stretch" style="background-image:url(images/about.jpg);"></div>
+    			</div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-3">
+        </div>
+    	</div>
+    </section>
+		<section class="ftco-section bg-light">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Programme de l'événement</span>
+            <h2 class="mb-4"></h2>
+          </div>
+        </div>
+        <div class="ftco-search">
+					<div class="row">
+            <div class="col-md-12 nav-link-wrap">
+	            <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+	              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Samedi <span> 20 Mars. 2024</span></a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Dimanche <span>21 Mars. 2024</span></a>
+
+
+
+	            </div>
+	          </div>
+	          <div class="col-md-12 tab-wrap">
+	            
+	            <div class="tab-content" id="v-pills-tabContent">
+
+	              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+	              	<div class="speaker-wrap ftco-animate d-flex">
+	              		<div class="text pl-md-5">
+	              			<span class="time">08: - 10:00</span>
+                      
+                            <h2><a href="#">Marche</a></h2>
+                    
+                            <p>Le Marche offre de nombreux bienfaits pour la santé. </p>
+                            </div>
+	              		<div class="text pl-md-5">
+	              			<span class="time">10: - 12:00</span>
+                       
+                            <h2><a href="#">Yoga</a></h2>
+                    
+                            <p>Pratiquer le yoga apporte de nombreux bienfaits pour le corps et l'esprit. </p>
+                            <p>Cette discipline ancestrale combine des postures physiques, des exercices de respiration et des techniques de méditation pour favoriser le bien-être global. </p>
+                        </div>
+                      
+
+	              		<div class="text pl-md-5">
+	              			<span class="time">12: - 14:00</span>
+	              			<h2><a href="#">Retour</a></h2>
+	              			
+	              		</div>
+                          <h3 class="speaker-name">&mdash; <a href="#">Nour</a> <span class="position"></span></h3>
+	              	</div>
+	              </div>
+
+	              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+	              	<div class="speaker-wrap ftco-animate d-flex">
+	              		<div class="img speaker-img" style="background-image: url(images/);"></div>
+	              		<div class="text pl-md-5">
+                            <span class="time">08: - 10:00</span>
+                      
+                            <h2><a href="#">Marche de 1km</a></h2>
+                    
+                            <p>Le Marche offre de nombreux bienfaits pour la santé. </p>
+                            </div>
+	              		<div class="text pl-md-5">
+	              			<span class="time">10: - 12:00</span>
+                       
+                            <h2><a href="#">Yoga</a></h2>
+                    
+                            <p>Pratiquer le yoga apporte de nombreux bienfaits pour le corps et l'esprit. </p>
+                            <p>Cette discipline ancestrale combine des postures physiques, des exercices de respiration et des techniques de méditation pour favoriser le bien-être global. </p>
+                        </div>
+                      
+
+	              		<div class="text pl-md-5">
+	              			<span class="time">12: - 14:00</span>
+	              			<h2><a href="#">Retour</a></h2>
+	              			
+	              		</div>
+                          <h3 class="speaker-name">&mdash; <a href="#">Doua</a> <span class="position"></span></h3>
+	              	</div>
+	              </div>
+	              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+	              	<div class="speaker-wrap ftco-animate d-flex">
+	              		<div class="img speaker-img" style="background-image: url(images/person_1.jpg);"></div>
+	              		<div class="text pl-md-5">
+	              	</div>
+	              	</div>
+	              	<div class="speaker-wrap ftco-animate d-flex">
+	              		<div class="img speaker-img" style="background-image: url(images/person_2.jpg);"></div>
+	              		<div class="text pl-md-5">
+	              			<span class="time">08: - 10:00</span>
+	              			<h2><a href="#">Best Practices For Programming WordPress</a></h2>
+	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	              			<h3 class="speaker-name">&mdash; <a href="#">Brett Morgan</a> <span class="position">Founder of Wordpress</span></h3>
+	              		</div>
+	              	</div>
+	              	<div class="speaker-wrap ftco-animate d-flex">
+	              		<div class="img speaker-img" style="background-image: url(images/person_3.jpg);"></div>
+	              		<div class="text pl-md-5">
+	              			<span class="time">08: - 10:00</span>
+	              			<h2><a href="#">Web Performance For Third Party Scripts</a></h2>
+	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	              			<h3 class="speaker-name">&mdash; <a href="#">Brett Morgan</a> <span class="position">Founder of Wordpress</span></h3>
+	              		</div>
+	              	</div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+        </div>
+			</div>
+		</section>
+		
+
+    <section class="ftco-section testimony-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Testimonial</span>
+            <h2 class="mb-4"><span>Clients </span>satisfaits</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/speaker-1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">J'ai adoré l'ambiance énergique et la camaraderie entre les participants. C'était une expérience vraiment motivante !"</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/speaker-2.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">Je suis tellement reconnaissant d'avoir participé à cet événement sportif. Non seulement j'ai pu me dépasser physiquement, mais j'ai également rencontré des personnes formidables partageant la même passion que moi."</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/speaker-3.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">C'était génial de voir autant de gens réunis pour soutenir une cause sportive. Participer à cet événement m'a rappelé l'importance du sport dans la construction de communautés solides et en bonne santé.</p>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/speaker-4.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">Je suis impressionné par l'organisation de l'événement. Tout était parfaitement orchestré, des inscriptions à la logistique sur place. Cela a vraiment facilité ma participation et m'a permis de me concentrer sur ma performance.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/speaker-5.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">Ce événement sportif m'a donné un nouvel élan de motivation pour poursuivre mes objectifs de fitness. Je suis tellement inspiré par les autres participants et leur détermination. Vivement l'année prochaine</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <span class="subheading">Table de Prix</span>
+            <h2 class="mb-1"><span>Prix irrésistibles </span> : Venez découvrir nos offres exceptionnelles !</h2>
+          </div>
+        </div>
+        <div class="row">
+	        <div class="col-md-4 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+	            <h2 class="heading">Une personne</h2>
+	            <span class="price"><sup>dt</sup> <span class="number">20</span></span>
+	            <span class="excerpt d-block">par Mois</span>
+	            
+	            <h3 class="heading-2 my-4">Profitez de toutes les fonctionnalités</h3>
+	            
+	            <ul class="pricing-text mb-5">
+                <li>-Itinéraires de marche</li>
+                <li>-Collations nutritives</li>
+                <li>-Séances d'entraînement</li>
+                <li>-Coachs professionnels</li>
+                <li>-Séances de yoga</li>
+                <li>-Accès illimité</li>
+                <li>-Tapis de yoga fournis</li>
+                <li>-Ateliers spéciaux</li>
+                <li>-Matériel pédagogique</li>
+	            </ul>
+
+	            <a href="#" class="btn btn-primary d-block px-2 py-3">Acheter Ticket</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-4 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+	            <h2 class="heading">Groupe de 2 â 4 personnes</h2>
+	            <span class="price"><sup>dt</sup> <span class="number">65</span></span>
+	            <span class="excerpt d-block">par Mois</span>
+	            
+	            <h3 class="heading-2 my-4">Profitez de toutes les fonctionnalités</h3>
+	            
+	            <ul class="pricing-text mb-5">
+                <li>-Itinéraires de marche</li>
+                <li>-Collations nutritives</li>
+                <li>-Séances d'entraînement</li>
+                <li>-Coachs professionnels</li>
+                <li>-Séances de yoga</li>
+                <li>-Accès illimité</li>
+                <li>-Tapis de yoga fournis</li>
+                <li>-Ateliers spéciaux</li>
+                <li>-Matériel pédagogique</li>
+	            </ul>
+
+	            <a href="#" class="btn btn-primary d-block px-2 py-3">Acheter Ticket</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-4 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+	            <h2 class="heading">Pack Familial</h2>
+	            <span class="price"><sup>dt</sup> <span class="number">90</span></span>
+	            <span class="excerpt d-block">par Mois</span>
+	            
+	            <h3 class="heading-2 my-4">Profitez de toutes les fonctionnalités</h3>
+	            
+	            <ul class="pricing-text mb-5">
+                <li>-Itinéraires de marche</li>
+                <li>-Collations nutritives</li>
+                <li>-Séances d'entraînement</li>
+                <li>-Coachs professionnels</li>
+                <li>-Séances de yoga</li>
+                <li>-Accès illimité</li>
+                <li>-Tapis de yoga fournis</li>
+                <li>-Ateliers spéciaux</li>
+                <li>-Matériel pédagogique</li>
+	            </ul>
+
+	            <a href="#" class="btn btn-primary d-block px-2 py-3">Acheter Ticket</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Notre Blog</span>
+            <h2><span>Blog</span> Récent</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/o.jpeg');">
+              </a>
+              <div class="text p-4 float-right d-block">
+              	<div class="d-flex align-items-center pt-2 mb-4">
+              		<div class="one">
+              			<span class="day">07</span>
+              		</div>
+              		<div class="two">
+              			<span class="yr">2019</span>
+              			<span class="mos">January</span>
+              		</div>
+              	</div>
+                <h3 class="heading mt-2"><a href="#">Article</a></h3>
+                <p>
+
+                  Les Bienfaits de la Marche pour la Santé Physique et Mentale
+                  
+                  La marche est l'une des formes les plus accessibles et bénéfiques d'activité physique pour améliorer à la fois la santé physique et mentale. En effet, ses avantages vont bien au-delà de simplement parcourir des kilomètres. Voici pourquoi vous devriez envisager d'intégrer la marche à votre routine quotidienne.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/mar.jpeg');">
+              </a>
+              <div class="text p-4 float-right d-block">
+              	<div class="d-flex align-items-center pt-2 mb-4">
+              		<div class="one">
+              			<span class="day">07</span>
+              		</div>
+              		<div class="two">
+              			<span class="yr">2019</span>
+              			<span class="mos">January</span>
+              		</div>
+              	</div>
+                <h3 class="heading mt-2"><a href="#">Conseils de Sécurité pour Profiter Pleinement de vos Activités en Plein Air</a></h3>
+                <p>Participer à des événements sportifs en plein air peut être une expérience formidable, mais il est essentiel de prendre des précautions pour assurer votre sécurité. Voici quelques conseils utiles :<br>
+                  -Rester Hydraté.<br>
+                  -Porter des Vêtements Appropriés.<br>
+                  -Se Protéger du Soleil.<br>
+                  -Éviter les Heures Chaudes.<br>
+                  -Connaître les Signes de Surchauffe et de Déshydratation.
+                  -Écouter son Corps.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/no.jpeg');">
+              </a>
+              <div class="text p-4 float-right d-block">
+              	<div class="d-flex align-items-center pt-2 mb-4">
+              		<div class="one">
+              			<span class="day">06</span>
+              		</div>
+              		<div class="two">
+              			<span class="yr">2019</span>
+              			<span class="mos">January</span>
+              		</div>
+              	</div>
+                <h3 class="heading mt-2"><a href="#">Les Dernières Actualités et Tendances dans le Monde du Sport</a></h3>
+                <p>Dans un monde en constante évolution, le domaine du sport ne fait pas exception. Voici un aperçu des dernières nouvelles et tendances qui façonnent l'avenir de l'industrie sportive :<br>
+
+                  -Avancées Technologiques dans le Sport.<br>
+                 -Études sur la Santé et le Bien-être des Athlètes.<br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+		<section class="ftco-section-parallax">
+      <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+              <h2>Inscrivez-vous à notre Newsletter</h2>
+              <p>Restez informé(e) des dernières actualités, événements et offres exclusives en vous abonnant à notre newsletter. Recevez des conseils santé, des astuces d'entraînement et bien plus encore directement dans votre boîte de réception.</p>
+              <div class="row d-flex justify-content-center mt-4 mb-4">
+                <div class="col-md-8">
+                  <form action="#" class="subscribe-form">
+                    <div class="form-group d-flex">
+                      <input type="text" class="form-control" placeholder="Enter email address">
+                      <input type="submit" value="Subscribe" class="submit px-3">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-gallery">
+    	<div class="container-wrap">
+    		<div class="row no-gutters">
+					<div class="col-md-3 ftco-animate">
+						<a href="images/u.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/u.jpeg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="images/l.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/l.jpeg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="images/k.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/k.jpeg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="images/w.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/w.jpeg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+        </div>
+    	</div>
+    </section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Active Harmony</h2>
+              <p>Un esprit sain dans un corps sain.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Lien utilisés</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Speakers</a></li>
+                <li><a href="#" class="py-2 d-block">Shcedule</a></li>
+                <li><a href="#" class="py-2 d-block">Events</a></li>
+                <li><a href="#" class="py-2 d-block">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Privée</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Career</a></li>
+                <li><a href="#" class="py-2 d-block">About Us</a></li>
+                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                <li><a href="#" class="py-2 d-block">Services</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Avez vous des questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Sousse , M'saken 4070</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">12345678</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
+{% endblock %}
